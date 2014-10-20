@@ -5,10 +5,10 @@ var concat = require('gulp-concat-sourcemap');
 
 
 gulp.task('build', function() {
-    gulp.src(['src/start.js', 'src/**/*.js', 'src/end.js'])
-      .pipe(map(function (code, filename) {
-        return compile(code);
-      }))
-      .pipe(concat('logen.js'))
-      .pipe(gulp.dest('dist'));
+  gulp.src(['src/start.js', 'src/**/!(end.js)*.js', 'src/end.js'])
+    .pipe(map(function (code, filename) {
+      return compile(code);
+    }))
+    .pipe(concat('logen.js'))
+    .pipe(gulp.dest('dist'));
 });

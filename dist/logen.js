@@ -35,6 +35,11 @@ logen.each = function(obj, iteratee) {
 };
 
 
+logen.isGenerator = function isGenerator(fn) {
+  return fn.constructor.name === 'GeneratorFunction';
+};
+
+
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = logen;
 } else if (typeof define === 'function' && define.amd) {
@@ -42,11 +47,6 @@ if (typeof module !== 'undefined' && module.exports) {
 } else {
   this.logen = logen;
 }
-
-
-logen.isGenerator = function isGenerator(fn) {
-  return fn.constructor.name === 'GeneratorFunction';
-};
 
 
 //# sourceMappingURL=logen.js.map
