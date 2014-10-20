@@ -1,0 +1,20 @@
+{
+  "name": "logen",
+  "version": "0.0.0",
+  "description": "lodash like library for generators",
+  "main": "dist/logen.js",
+  "scripts": {
+    "test": "node_modules/.bin/mocha --harmony"
+  },
+  "author": "Moshe Kolodny",
+  "license": "MIT",
+  "devDependencies": {
+    "co": "^3.1.0",
+    "co-sleep": "0.0.1",
+    "gulp": "^3.8.8",
+    "gulp-concat-sourcemap": "^1.3.1",
+    "mocha": "^1.21.4",
+    "strip-indent": "^1.0.0",
+    "vinyl-map": "^1.0.1"
+  }
+}
